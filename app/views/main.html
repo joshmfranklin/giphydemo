@@ -1,22 +1,32 @@
-<form name="search">
-  <md-input-container>
-    <label>Search Giphy</label>
-    <input type="text"
-           ng-model="search"
-           ng-change="change()"
-           placeholder="Ex. Cute cats" />
-  </md-input-container>
-</form>
-<div class="masonry" data-columns>
-  <div class="item" ng-repeat="giphy in search.data">
-    <md-card>
-      <img src="{{ giphy.images.fixed_height_small.url }}" class="md-card-image"/>
-      <md-card-content>
-        <h2 class="md-title">{{ giphy.id }}</h2>
-        <p>
-          {{ giphy.import_datetime }}
-        </p>
-      </md-card-content>
-    </md-card>
+<div id="master-search-bar" class="md-whiteframe-z1 white-background mbl">
+  <div class="container-fluid">
+    <div class="row mvl">
+      <div class="col-md-12">
+        <i class="material-icons md-36 pull-left pas">search</i>
+        <form class="form-inline">
+          <input type="text"
+                 ng-model="search"
+                 ng-change="change()"
+                 class="master-search md-subhead half-width form-control"
+                 placeholder="Search for a gif (ex. cute kittens)"
+                 autofocus/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="masonry" data-columns>
+    <div class="item animated fadeIn" ng-repeat="giphy in gifs.data">
+      <md-card>
+        <img src="{{ giphy.images.fixed_height_small.url }}" class="md-card-image"/>
+        <md-card-content>
+          <h2 class="md-title">{{ giphy.id }}</h2>
+          <p>
+            {{ giphy.rating }}
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
   </div>
 </div>

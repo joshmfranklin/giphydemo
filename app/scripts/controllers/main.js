@@ -27,7 +27,7 @@ angular.module('workspaceApp')
     function fetch() {
       $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&rating=r&limit=75&api_key=dc6zaTOxFJmzC")
         .success(function(response) {
-          $scope.search = response;
+          $scope.gifs = response;
         });
 
     }  	

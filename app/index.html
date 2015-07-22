@@ -9,28 +9,27 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="workspaceApp" class="light-background">
+  <body ng-app="workspaceApp" class="medium-background">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <md-toolbar>
-      <div class="md-toolbar-tools">
-        <h2>
-          <span>Peaches n' Cream</span>
-        </h2>
-      </div>
+    <md-toolbar class="md-tall">
+      <span flex></span>
+      <h1 class="md-toolbar-tools md-toolbar-tools-bottom md-display-1">
+        <span>Peaches & Cream</span>
+      </h1>
     </md-toolbar>
-    <div class="container-fluid">
-      <div ng-view=""></div>
-    </div>
+    <div ng-view=""></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

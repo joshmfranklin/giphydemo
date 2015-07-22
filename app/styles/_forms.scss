@@ -1,0 +1,10 @@
+.master-search {
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: none;
+		border-color: transparent;
+	}
+}
