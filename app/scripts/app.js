@@ -34,3 +34,7 @@ angular
         redirectTo: '/'
       });
   });
+
+$(document).ready(function(){
+  $("#sticker").sticky({topSpacing:80});
+});

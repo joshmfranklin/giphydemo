@@ -1,0 +1,23 @@
+{
+  "name": "makefixed.js",
+  "author": "Guilherme Augusto Madaleno",
+  "main": "makefixed.js",
+  "ignore": [
+    "**/.*",
+    "*.md",
+    "bower.json"
+  ],
+  "dependencies": {
+    "jquery": "~2.x"
+  },
+  "homepage": "https://github.com/guimadaleno/makefixed.js",
+  "_release": "a69a716fee",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a69a716feeb76e9b1eeb1ddd2a62975e404e061a"
+  },
+  "_source": "git://github.com/guimadaleno/makefixed.js.git",
+  "_target": "*",
+  "_originalSource": "makefixed"
+}
