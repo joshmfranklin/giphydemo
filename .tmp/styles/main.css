@@ -9008,4 +9008,16 @@ html, body {
   font-size: 34px;
 }
 
+/* line 1, ../../app/styles/_loader.scss */
+.loader-container {
+  position: relative;
+}
+
+/* line 5, ../../app/styles/_loader.scss */
+md-progress-circular {
+  position: absolute;
+  top: -8px;
+  right: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */

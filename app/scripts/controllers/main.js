@@ -25,9 +25,11 @@ angular.module('workspaceApp')
     };
 
     function fetch() {
+      $scope.isLoading = true;
       $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&rating=r&limit=75&api_key=dc6zaTOxFJmzC")
         .success(function(response) {
           $scope.gifs = response;
+          $scope.isLoading = false;
         });
 
     }  	

@@ -1,7 +1,7 @@
 <div id="search-container" class="md-whiteframe-z1 white-background mbl">
   <div class="container-fluid">
     <div class="row mvl">
-      <div class="col-md-12">
+      <div class="col-md-11">
         <i class="material-icons md-36 pull-left pas">search</i>
         <form class="form-inline">
           <input type="text"
@@ -12,20 +12,17 @@
                  autofocus/>
         </form>
       </div>
+      <div class="loader-container">
+        <md-progress-circular md-mode="indeterminate" md-diameter="25" ng-show="isLoading"></md-progress-circular>
+      </div>
     </div>
   </div>
 </div>
 <div class="container-fluid">
   <div class="masonry" data-columns>
-    <div class="item animated fadeIn" ng-repeat="giphy in gifs.data">
+    <div class="item" ng-repeat="giphy in gifs.data">
       <md-card>
         <img src="{{ giphy.images.fixed_height_small.url }}" class="md-card-image"/>
-        <md-card-content>
-          <h2 class="md-title">{{ giphy.id }}</h2>
-          <p>
-            {{ giphy.rating }}
-          </p>
-        </md-card-content>
       </md-card>
     </div>
   </div>
