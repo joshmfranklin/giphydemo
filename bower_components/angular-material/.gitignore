@@ -3,3 +3,5 @@
 .DS_STORE
 /.idea/
 default-theme.css
+.tmp
+.sass-cache
